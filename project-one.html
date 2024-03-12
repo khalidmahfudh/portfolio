@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Khalid Mahfudh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Khalid Mahfudh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="/#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="/#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="/#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="project">
+        <p class="section__text__p1">Project 1</p>
+        <h1 class="title">Sistem Pakar Menentukan Gangguan Indihome Metode Algoritma BFS</h1>
+        <div class="project-info-container">
+          <img src="./assets/login-1.png" alt="login1 img">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit id dicta saepe asperiores sit pariatur repellendus quasi quam labore debitis deserunt commodi eius aliquid architecto, explicabo non est. Suscipit officia animi quam expedita assumenda harum, nihil odit exercitationem ducimus asperiores. Temporibus dignissimos accusamus nisi! Repudiandae id praesentium quibusdam. Quis odit consequuntur tempore tempora, unde quasi necessitatibus delectus, laborum aliquid voluptatum perspiciatis suscipit illo dicta tenetur ullam ducimus a velit praesentium molestias odio voluptate expedita! Pariatur, enim totam itaque ducimus neque deleniti culpa nesciunt sit, omnis, impedit officia explicabo quasi hic? Qui commodi blanditiis unde eveniet laudantium facere officiis debitis.</p>
+          <img src="./assets/project-1.png" alt="project-1 img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit id dicta saepe asperiores sit pariatur repellendus quasi quam labore debitis deserunt commodi eius aliquid architecto, explicabo non est. Suscipit officia animi quam expedita assumenda harum, nihil odit exercitationem ducimus asperiores. Temporibus dignissimos accusamus nisi! Repudiandae id praesentium quibusdam. Quis odit consequuntur tempore tempora, unde quasi necessitatibus delectus, laborum aliquid voluptatum perspiciatis suscipit illo dicta tenetur ullam ducimus a velit praesentium molestias odio voluptate expedita! Pariatur, enim totam itaque ducimus neque deleniti culpa nesciunt sit, omnis, impedit officia explicabo quasi hic? Qui commodi blanditiis unde eveniet laudantium facere officiis debitis.</p>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+    </body>
+  </html>

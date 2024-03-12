@@ -1,25 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquaries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Khalid Mahfudh Al Azizi</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Khalid Mahfudh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    
+    <nav id="hamburger-nav">
+      <div class="logo">Khalid Mahfudh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="profile-pic" src="./assets/profile-pic.png" alt="Khalid Mahfudh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Khalid Mahfudh</h1>
+        <p class="section__text__p2">Junior Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/khalid-al-azizi-bb7a7b1b1/" target="_blank"><img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"></a>
+          <a href="https://github.com/khalidmahfudh/" target="_blank"><img src="./assets/github.png" alt="My Github Profile" class="icon"></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Web Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>S.Kom. Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Halo, nama saya Khalid Mahfudh! Saya lulusan dari program studi Informatika di Universitas Samudra Langsa. Selama kuliah, saya telah mengembangkan minat yang kuat dalam membangun situs web. Dalam kurun waktu lebih dari 2 tahun, saya telah membangun berbagai proyek web yang mencakup baik proyek pribadi maupun proyek untuk orang lain. Saya sangat menikmati proses menghadirkan ide-ide kreatif menjadi kenyataan melalui desain dan pengembangan web. Saya selalu bersemangat untuk terus belajar dan mengembangkan keterampilan saya dalam membangun pengalaman web yang menarik dan fungsional. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <div class="icons-container">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="icons-container">
+                  <i class="fab fa-css3"></i>
+                </div>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="icons-container">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div>
+                  <h3>ReactJS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div class="icons-container">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div class="icons-container">
+                  <i class="fab fa-bootstrap"></i>
+                </div>
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <div class="icons-container">
+                  <i class="fab fa-php"></i>
+                </div>
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div class="icons-container">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div class="icons-container">
+                  <p>ex</p>
+                </div>
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div class="icons-container">
+                  <i class="fab fa-laravel"></i>
+                </div>
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!-- project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html5</span>
+              <span class="css">css3</span>
+              <span class="js">javascript</span>
+              <span class="bs">bootstrap</span>
+              <span class="php">php7</span>
+              <span class="ci">codeigniter3</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Sistem Pakar Menentukan Gangguan Indihome Metode Algoritma BFS</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/sistem-pakar-bfs-telkom" target="_blank">Github</a></button>
+            </div>
+          </div>
+
+          <!-- project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html5</span>
+              <span class="css">css3</span>
+              <span class="js">javascript</span>
+              <span class="bs">bootstrap</span>
+              <span class="php">php7</span>
+              <span class="lara">laravel8</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Sistem Penjadwalan Perkuliahan Metode Algoritma Genetika</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/sistem-jadwal-kuliah-genetika" target="_blank">Github</a></button>
+            </div>
+          </div>
+
+          <!-- project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html5</span>
+              <span class="css">css3</span>
+              <span class="js">javascript</span>
+              <span class="bs">bootstrap</span>
+              <span class="php">php8</span>
+              <span class="lara">laravel10</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Sistem Pendukung Keputusan Mahasiswa Berprestasi Metode Algoritma AHP dan TOPSIS</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/sistem-pakar-bfs-telkom" target="_blank">Github</a></button>
+            </div>
+          </div>
+
+          <!-- project 4 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html 5</span>
+              <span class="css">css 3</span>
+              <span class="js">javascript</span>
+              <span class="php">php 7</span>
+              <span class="lara">laravel 8</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Sistem Penilaian Kinerja Pegawai Metode Algoritma SAW dan MFEP</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/sistem-pakar-bfs-telkom" target="_blank">Github</a></button>
+              <button class="btn btn-color-2 project-btn"><a href="./project-one.html" target="_blank">Detail</a></button>
+            </div>
+          </div>
+
+          <!-- project 5 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html 5</span>
+              <span class="css">css 3</span>
+              <span class="js">javascript</span>
+              <span class="php">php 7</span>
+              <span class="ci">codeigniter 3</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Sistem Pelaporan Data Tahunan Dinas Pertanian, Perkebunan dan Peternakan</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/sistem-pakar-bfs-telkom" target="_blank">Github</a></button>
+              <button class="btn btn-color-2 project-btn"><a href="./project-one.html" target="_blank">Detail</a></button>
+            </div>
+          </div>
+
+          <!-- project 6 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html 5</span>
+              <span class="css">css 3</span>
+              <span class="js">javascript</span>
+              <span class="react">reactjs</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Tic Tac Toe Game ReactJS</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/tic-tac-toe-game" target="_blank">Github</a></button>
+              <button class="btn btn-color-2 project-btn"><a href="https://khalidmahfudh.github.io/tic-tac-toe-game" target="_blank">Demo</a></button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html 5</span>
+              <span class="css">css 3</span>
+              <span class="js">javascript</span>
+              <span class="php">php 7</span>
+              <span class="ci">codeigniter 3</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Sistem Pakar Menentukan Gangguan Indihome Metode BFS</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/sistem-pakar-bfs-telkom" target="_blank">Github</a></button>
+              <button class="btn btn-color-2 project-btn"><a href="./project-one.html" target="_blank">Detail</a></button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html 5</span>
+              <span class="css">css 3</span>
+              <span class="js">javascript</span>
+              <span class="php">php 7</span>
+              <span class="ci">codeigniter 3</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Sistem Pakar Menentukan Gangguan Indihome Metode BFS</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/sistem-pakar-bfs-telkom" target="_blank">Github</a></button>
+              <button class="btn btn-color-2 project-btn"><a href="./project-one.html" target="_blank">Detail</a></button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="technologies-container">
+              <span class="html">html 5</span>
+              <span class="css">css 3</span>
+              <span class="js">javascript</span>
+              <span class="php">php 7</span>
+              <span class="ci">codeigniter 3</span>
+            </div>
+            <h2 class="experience-sub-title project-title">Sistem Pakar Menentukan Gangguan Indihome Metode BFS</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"><a href="https://github.com/khalidmahfudh/sistem-pakar-bfs-telkom" target="_blank">Github</a></button>
+              <button class="btn btn-color-2 project-btn"><a href="./project-one.html" target="_blank">Detail</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:khalidmahfudh94@gmail.com">khalidmahfudh94@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; <span id="year"></span> Khalid Mahfudh. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
